@@ -18,10 +18,10 @@ def lab3Question2(decimal_number):
     # Return "zero" if the number is 0, "positive" if the number is positive, and "negative" if the number is negative
     # Return "invalid" if the input is not a float
     result=""
-    if type(decimal_number)==float:
+    if type(decimal_number)in (int, float):
         if decimal_number==0:
             result="zero"
-        elif decimal_number>0:
+        elif decimal_number >0:
             result="positive"
         else:
             result="negative"
